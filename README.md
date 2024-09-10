@@ -25,19 +25,44 @@ g++ lab4-1_cpu.cpp -o ./lab4-1_cpu.out
 ./lab4-1_cpu.out
 ```
 
-Make sure fill-in your code, then run
+```
+Length of vector: 67108864
+Time elapsed for vector addition: 151 ms
+Vector addition completed successfully!
+```
+
+Run directly
 ```bash
 nvcc lab4-1.cu -o lab4-1.out
 ./lab4-1.out
+```
+
+```
+Length of vector: 67108864
+CUDA kernel launch with 262144 blocks of 256 threads
+Time elapsed for memory allocation: 73 ms
+Time elapsed for data transfer from host to device: 33 ms
+Time elapsed for kernel execution: 0 ms
+Time elapsed for data transfer from device to host: 65 ms
+Total time elapsed: 172 ms
+Vector addition completed successfully!
 ```
 
 ### LAB 4-2
 Make sure fill in your code, then run
 ```bash
 cmake -S ./lab4-2 -B ./build
-cmake --build build/ # or cd build; make
-cd build/
-./MatrixMultiplication
+cmake --build build/
+./build/MatrixMultiplication
+```
+
+```
+Matrix dimensions: 2048 x 2048 and 2048 x 2048
+Allocating matrices...
+Start matrix multiplication...
+Matrix multiplication on CPU completed in 16.509 seconds
+Matrix multiplication on GPU completed in 0.0857489 seconds
+Matrix multiplication completed successfully!
 ```
 
 ## LAB 5
