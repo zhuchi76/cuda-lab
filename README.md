@@ -7,6 +7,11 @@ Clone the repo
 git clone git@github.com:zhuchi76/cuda-lab.git
 ```
 
+Enter the directory
+```bash
+cd cuda-lab
+```
+
 ## LAB 4
 Run the docker
 ```bash
